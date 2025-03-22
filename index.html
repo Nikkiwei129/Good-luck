@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玄机 - 现代化东西方运势预测平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(120deg, #4F46E5, #9333EA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">玄机</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">特色</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-gray-900">使用方法</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900">用户评价</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-gray-900">价格</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">常见问题</a>
+                </div>
+                <button class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition">开始测算</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold mb-8 gradient-text">探索你的命运密码</h1>
+                <p class="text-xl text-gray-600 mb-12">融合东方玄学与西方占星，运用紫微斗数、易经八卦与现代星座学，为您提供专业、精准的运势预测</p>
+                <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+                    <form id="fortuneForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-blue-700 mb-2">姓名</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-blue-700 mb-2">生日</label>
+                            <input type="date" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition">
+                            立即测算运势
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">专业解析系统</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">紫微斗数</h3>
+                    <p class="text-gray-600">基于古老的东方星象学，精确计算您的人生格局</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">易经八卦</h3>
+                    <p class="text-gray-600">运用五千年智慧，演算命理走向</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">星座占星</h3>
+                    <p class="text-gray-600">结合西方占星学，全方位解读运势</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">测算流程</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-indigo-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">输入信息</h3>
+                    <p class="text-gray-600">填写基本个人信息</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-indigo-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">智能分析</h3>
+                    <p class="text-gray-600">系统进行多维度运算</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-indigo-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">生成报告</h3>
+                    <p class="text-gray-600">获取详细运势报告</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-2xl font-bold text-indigo-600">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">专家解读</h3>
+                    <p class="text-gray-600">可选择专家在线解答</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">用户评价</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full" alt="用户头像">
+                        <div class="ml-4">
+                            <h4 class="font-bold">李女士</h4>
+                            <p class="text-gray-500">企业高管</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"测算结果非常准确，尤其是在事业发展方面的建议，帮助我做出了重要决策。"</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full" alt="用户头像">
+                        <div class="ml-4">
+                            <h4 class="font-bold">王先生</h4>
+                            <p class="text-gray-500">创业者</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"东西方结合的分析方式很新颖，给了我很多启发，推荐给身边的朋友们。"</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full" alt="用户头像">
+                        <div class="ml-4">
+                            <h4 class="font-bold">张女士</h4>
+                            <p class="text-gray-500">自由职业者</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"专业的解读让我对未来更有信心，建议都很实用，值得尝试。"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">服务套餐</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">基础版</h3>
+                    <p class="text-4xl font-bold mb-8">¥58<span class="text-base font-normal text-gray-500">/次</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            基础运势分析
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            运势评级
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            基本建议
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition">
+                        立即购买
+                    </button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl transform scale-105 border-2 border-indigo-500">
+                    <div class="absolute top-0 right-0 bg-indigo-500 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg">
+                        推荐
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">专业版</h3>
+                    <p class="text-4xl font-bold mb-8">¥138<span class="text-base font-normal text-gray-500">/次</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            详细运势分析
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            运势评级与分数
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            专业建议指导
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            一次在线咨询
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition">
+                        立即购买
+                    </button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">尊享版</h3>
+                    <p class="text-4xl font-bold mb-8">¥328<span class="text-base font-normal text-gray-500">/次</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            全面运势分析
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            详细运势报告
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            专家一对一指导
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            三次在线咨询
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition">
+                        立即购买
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">常见问题</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">测算结果准确吗？</h3>
+                    <p class="text-gray-600">我们采用东西方结合的专业算法，结合多年经验，准确率较高。但运势指引仅供参考，具体行动需要您自己决定。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">如何保护我的隐私？</h3>
+                    <p class="text-gray-600">我们严格遵守隐私保护规定，所有个人信息都经过加密处理，不会泄露给第三方。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">可以退款吗？</h3>
+                    <p class="text-gray-600">由于服务的特殊性，一旦开始测算，将无法退款。建议您先选择基础版体验。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">玄机</h3>
+                    <p class="text-gray-400">专业的运势预测平台，让你掌握人生方向。</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">特色</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white">使用方法</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white">价格</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">联系我们</h4>
+                    <p class="text-gray-400">邮箱：nikkiwei129@gmail.com</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 9.806l-.507.007a1.5 1.5 0 00-1.457 1.45v.033-.002.507a1.5 1.5 0 001.457 1.45l.507.007v2.486A4.002 4.002 0 0114 19.803V15h-2v4.803A4.002 4.002 0 018 15.743v-2.486l.507-.007a1.5 1.5 0 001.457-1.45v-.033.002-.507a1.5 1.5 0 00-1.457-1.45L8 9.806V8a4 4 0 018 0v1.806z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3 8h-1.35c-.538 0-.65.221-.65.778V10h2l-.209 2H13v7h-3v-7H8v-2h2V8.192C10 6.307 10.896 5 13.113 5H15v3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">© 2025 玄机 版权所有 | Nikki Wei</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 运势计算逻辑
+        document.getElementById('fortuneForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取表单数据
+            const name = this.querySelector('input[type="text"]').value;
+            const birthday = this.querySelector('input[type="date"]').value;
+            
+            // 计算运势（示例算法）
+            const calculateFortune = (name, birthday) => {
+                const date = new Date(birthday);
+                const fortuneScore = ((date.getDate() * date.getMonth() + name.length) % 20) + 80;
+                const levels = ['极好', '良好', '平稳', '注意'];
+                const level = levels[Math.floor(Math.random() * levels.length)];
+                
+                const goodThings = [
+                    '投资理财', '谈判签约', '开展新项目',
+                    '社交活动', '学习进修', '运动健身'
+                ];
+                
+                const badThings = [
+                    '轻率决策', '过度消费', '情绪冲动',
+                    '熬夜', '剧烈运动', '重要决定'
+                ];
+                
+                return {
+                    score: fortuneScore,
+                    level: level,
+                    good: goodThings.sort(() => 0.5 - Math.random()).slice(0, 3),
+                    bad: badThings.sort(() => 0.5 - Math.random()).slice(0, 3)
+                };
+            };
+            
+            const result = calculateFortune(name, birthday);
+            
+            // 创建结果弹窗
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            modal.innerHTML = `
+                <div class="bg-white p-8 rounded-2xl max-w-md w-full mx-4">
+                    <h3 class="text-2xl font-bold mb-4">运势分析结果</h3>
+                    <div class="space-y-4">
+                        <p class="text-lg">运势评级：<span class="font-bold text-indigo-600">${result.level}</span></p>
+                        <p class="text-lg">运势分数：<span class="font-bold text-indigo-600">${result.score}</span></p>
+                        <div>
+                            <p class="font-bold text-green-600">宜：</p>
+                            <ul class="list-disc list-inside">
+                                ${result.good.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-bold text-red-600">忌：</p>
+                            <ul class="list-disc list-inside">
+                                ${result.bad.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">注：本结果仅供参考，具体行动请结合实际情况决定。</p>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-2 rounded-lg mt-6 hover:bg-indigo-700 transition">
+                        关闭
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            
+            // 点击关闭按钮或背景关闭弹窗
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal || e.target.tagName === 'BUTTON') {
+                    modal.remove();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
